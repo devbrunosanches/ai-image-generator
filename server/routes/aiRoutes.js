@@ -10,7 +10,7 @@ const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openai = new OpenAIApi(configuration); // a payment method for openai api is necessary to make it work
+const openai = new OpenAIApi(configuration); // a payment is necessary for using openai api
 
 router.route('/').get((req, res) =>
 {
